@@ -12,7 +12,11 @@
 #define I 0x7F
 #define J 0x6F
 void setup()
-{ Serial.begin(9600);
+{pinMode(2,OUTPUT); 
+pinMode(3,OUTPUT); 
+pinMode(4,OUTPUT); 
+pinMode(5,OUTPUT); 
+Serial.begin(9600);
 }
 
 void loop(){
@@ -23,4 +27,5 @@ sbit DU=P2^6;
   DU=1;
   P0=dsite[i];
   DU=0;
+  delay(500);
   while(1);}
