@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<reg52.h>
+#define A 0x3f
+#define B 0x06
+#define C 0x5B
+#define D 0x4F
+#define E 0x66
+#define F 0x6D
+#define G 0x7D
+#define H 0x07
+#define I 0x7F
+#define J 0x6F
+void setup()
+{ Serial.begin(9600);
+}
+
+void loop(){
+sbit DU=P2^6;
+  char dsite[]={A,B,C,D,E,F,G,H,I,J};
+  int i;
+  DU=1;P0=dsite[i];DU=0;
+  while(1);}
