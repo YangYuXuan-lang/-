@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<reg52.h>
+#include<Arduino.h>
 #define A 0x3f
 #define B 0x06
 #define C 0x5B
@@ -17,6 +18,9 @@ void setup()
 void loop(){
 sbit DU=P2^6;
   char dsite[]={A,B,C,D,E,F,G,H,I,J};
-  int i;
-  DU=1;P0=dsite[i];DU=0;
+  int n;
+  n=Serial.read();
+  DU=1;
+  P0=dsite[i];
+  DU=0;
   while(1);}
