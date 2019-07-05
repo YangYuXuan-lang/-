@@ -2,8 +2,8 @@
 #include<string.h>
 #include <Morse.h>
 #define Q if(a[i]==
-#define A mouse.dot();//宏定义摩斯电码的点
-#define B mouse.dash();//宏定义摩斯电码的下划线
+#define A Morse.dot();//宏定义摩斯电码的点
+#define B Morse.dash();//宏定义摩斯电码的下划线
 #define C delay(1000);
 Morse morse(13);
  char a[100];
